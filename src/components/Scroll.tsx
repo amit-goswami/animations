@@ -31,10 +31,10 @@ export const ScrollAnimationComponent = () => {
 
   return (
     <motion.div className="sticky top-0 p-2">
-      <div className="flex items-center justify-between gap-2">
+      <motion.div className="flex items-center justify-between gap-2">
         <img src="assets/diamond.png" alt="logo" className="h-14 w-[50px]" />
         <img src="assets/right.png" alt="logo" className="h-12 w-[260px]" />
-      </div>
+      </motion.div>
       <motion.div
         className="flex items-center justify-center flex-1"
         style={{
@@ -44,6 +44,8 @@ export const ScrollAnimationComponent = () => {
           marginRight: rightNav,
           marginTop: topNav,
           backgroundImage: `url(${imageString})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <motion.div
@@ -58,29 +60,29 @@ export const ScrollAnimationComponent = () => {
             <li>Search</li>
           </ul>
         </motion.div>
-        <div className="absolute w-full p-16">
-          <div className="flex">
-            <div className="w-[80vw] flex justify-start items-center gap-6">
+        <motion.div className="absolute w-full p-16">
+          <motion.div className="flex">
+            <motion.div className="w-[80vw] flex justify-start items-center gap-6">
               <img src="assets/diamond.png" alt="logo" className="h-28" />
-              <div className="text-black">
+              <motion.div className="text-black">
                 <p className="italic">Information technology</p>
                 <p className="text-4xl font-medium">
                   Threadality Technologies India LLP
                 </p>
                 <p className="text-xl">Dubai, Dubai, UAE</p>
-              </div>
-            </div>
-            <div className="w-[20vw]">
-              <div className="flex items-center justify-center gap-2">
+              </motion.div>
+            </motion.div>
+            <motion.div className="w-[20vw]">
+              <motion.div className="flex items-center justify-center gap-2">
                 <img src="assets/cube.png" alt="logo" className="h-16" />
-                <div className="flex flex-col items-center text-black">
+                <motion.div className="flex flex-col items-center text-black">
                   <p className="text-4xl font-medium">4.5</p>
                   <p>12.5k</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                </motion.div>
+              </motion.div>
+            </motion.div>
+          </motion.div>
+        </motion.div>
       </motion.div>
     </motion.div>
   );

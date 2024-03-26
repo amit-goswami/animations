@@ -1,4 +1,4 @@
-import { Animate } from "@/components";
+import { Animate } from "@/components/Animate";
 import { ScrollAnimationComponent } from "@/components/Scroll";
 
 export default function Home() {
