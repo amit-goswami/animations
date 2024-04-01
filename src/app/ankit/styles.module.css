@@ -1,0 +1,43 @@
+/* * {
+  font-family: "Space Mono", monospace;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #cecece;
+}
+} */
+
+.ankit {
+}
+
+.bg {
+  background: #cecece;
+}
+
+.text {
+  color: #202020;
+}
+
+.bgbl {
+  background: #202020;
+}
+
+.footer_el::after {
+  content: "\27F6";
+  position: absolute;
+  transform: scaleX(0);
+}
+
+.footer_el:hover::after {
+  transform: scaleX(1);
+  transition: all 0.05s ease-out;
+  transform-origin: left;
+}
+
+.greyffiti_i {
+  color: red;
+}
